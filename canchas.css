@@ -1,0 +1,439 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    max-width: 880px;
+    font-family: 'Mukta Vaani', sans-serif;
+    margin: 0 auto;
+    background-image: url("Grass Background Roted.jfif");
+    background-repeat: repeat;
+    
+    
+}
+
+.todo{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+
+.marki{
+    height: 100%;
+    height: 250px;
+    font-size: 150px;
+    font-family: 'Holtwood One SC', serif;
+    color:#538d22;
+    font-weight: 900;
+    background: linear-gradient(90deg, rgba(20,62,13,1) 47%, rgba(11,98,54,1) 100%);
+    background-color: #245501;
+    user-select: none;
+    text-shadow: 4px 4px 1px black;
+}
+
+.nav{
+    width: 100%;
+    background: linear-gradient(90deg, rgba(83,141,34,1) 18%, rgba(20,62,13,1) 100%);
+    background-color: #538d22;
+    height: 60px;
+    margin-top: 4px;
+}
+
+.nav-elementos{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+    list-style: none;
+    
+}
+.nav-item{
+    font-size: 25px;
+    margin: 3px 30px;
+    color: white;
+    transition: transform 0.7s;
+    text-shadow: 3px 3px 8px black;
+}
+
+
+.nav-item:hover{
+    cursor: pointer;
+    transform: scale(1.123);
+}
+
+.nav-item i{
+    margin-right: 10px;
+} 
+
+.enlace{
+    text-decoration: none;
+    color: white;
+}
+
+.aviso{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(241, 241, 0);
+    margin-bottom: 30px;
+    padding: 30px;
+
+}
+
+.warning-con{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.warning-foto{
+    height: 180px;
+    width: 180px;
+    
+}
+
+.texto{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+.texto h1{
+    font-size: 42px;
+    text-decoration: underline;
+}
+
+.texto p{
+    text-align: center;
+    font-size: 18px;
+}
+
+
+
+/* .titulo h1{
+    padding:17px ;
+    font-size: 55px;
+    text-align: center;
+} */
+
+.cancha{
+    border: 3px solid green;
+    margin: 0 40px;
+    border-radius: 5px;
+}
+
+.cancha p{
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.formi{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    padding: 30px;
+    padding-top: 5px;
+}
+.input-tipo{
+    cursor: pointer;
+}
+.texto-input{
+    color: black;
+    font-size: 35px;
+    margin-left: 8px;
+}
+
+.foto{
+    height: 240px;
+    width: 350px;
+    border-radius: 5px;
+}
+
+.detalles{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+}
+
+.a{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a label{
+    font-size:30px ;
+    margin-right: 10px;
+}
+
+.input-hora{
+    cursor: pointer;
+    height: 30px;
+    width: 110px;
+    font-size: 18px;
+    font-family: 'Mukta Vaani', sans-serif;
+}
+
+.input-dia {
+    height: 30px;
+    cursor: pointer;
+    font-family: 'Mukta Vaani', sans-serif;
+    font-size: 18px;
+}
+
+.pago{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-pago{
+    height: 180px;
+    width: 180px;
+    border-radius: 5px;
+    user-select: none;
+}
+
+.seleccion select{
+    font-family: 'Mukta Vaani', sans-serif;
+    height: 40px;
+    cursor: pointer;
+    margin-right: 40px;
+    font-size: 20px;
+}
+
+.todoooo{
+    margin-top: 40px;
+}
+
+.error{
+    margin-bottom: 15px;
+    
+}
+
+.quitar{
+    display: none;
+}
+.texto-error{
+    background-color: rgb(255, 63, 63);
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius:5px ;
+    padding: 3px 20px;    
+    
+}
+
+.botones{
+    width: 90%;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 170px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.boton-cantidad{
+    height: 70px;
+    width: 30%;    
+    color: white;
+    font-size: 23px;
+    border-radius: 7px;
+    transition: background 0.5s, transform 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    text-shadow: 1px 2px 2px black;
+}
+
+.boton-cantidad:hover{
+    cursor: pointer;
+    transform: translateY(4.5px);
+}
+
+.res{
+    margin-right: 50px;
+    background-color: forestgreen;
+    border: none;
+}
+
+.canc{
+    background-color: rgb(164, 2, 2);
+    border: none;
+}
+
+
+.link{
+    width: 100%;
+}
+
+.fondo-modal{
+    background:rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    top: 0;
+    left: 0; 
+    display: none;
+    opacity: 0; 
+}
+.modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+    box-sizing: border-box;
+    position: absolute;
+    width: 780px;
+    height: 250px;
+    border-radius: 6px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    text-align: center;
+    padding: 15px 30px;
+    border: 4px solid lightgrey;
+}
+
+/*Prueba de commit*/
+
+@keyframes abrirModal {
+    0%{
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+    }
+    100%{
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+.separador{
+    background-color: #538d22;
+    background: linear-gradient(98deg, #116317 40%, #00C326 100%);
+    font-size: 30px;
+    text-align: center;
+    border-top: 6px solid green;
+    border-bottom: 6px solid green;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    color: white;
+    text-shadow: 3px 3px 5px black;
+    width: 100%;
+}
+
+.consulta{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+}
+
+.datos{
+    background-color: blue;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size: 40px;
+}
+
+.input-id{
+    margin: 0 18px;
+    font-size: 27px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-family: 'Mukta Vaani', sans-serif;
+    width: 130px;
+}
+
+.input-btn{
+    font-size: 30px;
+    border: 3px solid white;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgb(98, 98, 255);
+    color: white;
+    padding: 5px 8px;
+    font-family: 'Mukta Vaani', sans-serif;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+.input-btn:hover{
+    background-color: rgb(163, 163, 255);
+}
+
+.tit{
+    border: solid 3px blue;
+    padding: 5px 10px;
+    font-size: 16px;
+    
+
+}
+.table th,td{
+    border: solid 2px rgb(156, 155, 155);
+    padding: 5px 10px;
+    font-size: 16px;
+    text-align: center;
+
+}
+.table th,td a{
+    text-decoration: none;
+}
+.table th,td a:hover{
+    color: rgb(68, 87, 41);
+}
+
+.mensajeReservaERR{
+    width:100%;
+    height:150px;
+    background:#d90429;
+    position:fixed;
+    left:0;top:0;
+    opacity:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column
+}
+
+.mensajeReservaOK{
+    width:100%;
+    height:150px;
+    background:rgba(229,229,229,1);
+    position:fixed;
+    left:0;
+    top:0;
+    opacity:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column
+}
